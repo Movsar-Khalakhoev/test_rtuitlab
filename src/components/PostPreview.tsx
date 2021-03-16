@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { IPost } from '../types/globalTypes'
 import { Button, Card } from 'react-bootstrap'
 
-const Post: React.FC<{ post: IPost }> = ({ post }) => {
+const PostPreview: React.FC<{ post: IPost }> = ({ post }) => {
   return (
     <Card>
       <Card.Img variant='top' src={post.coverImage} />
@@ -18,4 +18,4 @@ const Post: React.FC<{ post: IPost }> = ({ post }) => {
   )
 }
 
-export default Post
+export default PostPreview
